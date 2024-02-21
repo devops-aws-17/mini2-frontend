@@ -9,7 +9,7 @@ pipeline {
         }
       stage('docker tag') {
             steps {
-                sh 'docker tag react1:v1 prasadchandu/java:reactjs1'
+                sh 'docker tag react1:v1 prasadchandu/java:react-v1'
             }
         }
       stage('docker login') {
@@ -19,7 +19,7 @@ pipeline {
         }
       stage('docker push') {
             steps {
-                sh 'docker push prasadchandu/java:reactjs1'
+                sh 'docker push prasadchandu/java:react-v1'
             }
         }
     }
